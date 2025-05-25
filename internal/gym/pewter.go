@@ -6,11 +6,6 @@ type Pewter struct {
 	trainer trainer
 }
 
-type trainer interface {
-	Name() string
-	ListPokemons()
-}
-
 func NewPewterGym(name string, trainer trainer) *Pewter {
 	return &Pewter{
 		Name:    name,

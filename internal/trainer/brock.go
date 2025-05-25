@@ -7,11 +7,6 @@ type Brock struct {
 	pokemons []pokemon
 }
 
-type pokemon interface {
-	Attack()
-	Name() string
-}
-
 func NewBrock(name string) *Brock {
 	return &Brock{
 		name: name,
