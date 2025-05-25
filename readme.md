@@ -9,19 +9,19 @@ O domínio do projeto é inspirado no universo Pokémon, modelando a estrutura d
 
 ### Injeção de Dependência (Dependency Injection)
 
-O `Gym` depende da interface `trainer`, e não de uma implementação concreta.
+- O `Gym` depende da interface `trainer`, e não de uma implementação concreta.
 
-O `trainer` é injetado no `Gym` via o *construtor* (`NewPewterGym`).
+- O `trainer` é injetado no `Gym` via o *construtor* (`NewPewterGym`).
 
-Aprendemos como criar *dependências* mais flexíveis e testáveis usando `interfaces` e injeção via `construtor`.
+- Aprendemos como criar *dependências* mais flexíveis e testáveis usando `interfaces` e injeção via `construtor`.
 
 ### Inversão de Dependência (Dependency Inversion)
 
-O módulo `Gym` não depende diretamente de um módulo de baixo nível (`Brock`), mas sim de uma abstração (`trainer` interface).
+- O módulo `Gym` não depende diretamente de um módulo de baixo nível (`Brock`), mas sim de uma abstração (`trainer` interface).
 
-Aprendemos a `desacoplar` componentes, facilitando manutenção e evolução do código.
+- Aprendemos a `desacoplar` componentes, facilitando manutenção e evolução do código.
 
-Demonstramos como aplicar o princípio `D` do `SOLID` em projetos Go, de forma simples e idiomática.
+- Demonstramos como aplicar o princípio `D` do `SOLID` em projetos Go, de forma simples e idiomática.
 
 ### Boas Práticas
 
