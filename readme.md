@@ -32,3 +32,17 @@ O domínio do projeto é inspirado no universo `Pokémon`, modelando a estrutura
 - Separação de responsabilidades em pacotes: `gym`, `trainer` e `pokemon`.
 
 - Como construir sistemas modulares e testáveis.
+
+## Próximos Passos
+
+- [ ] Adicionar o ginário de `Cerulean` e a treinadora `Misty`.
+- [ ] Implementar `mockery` para gerar mocks de interfaces.
+- [ ] Implementar teste unitário para o `Gym` e `Trainer`.
+- [ ] Implementar o restaurantes dos ginários de `Kanto` (Elite Four não inclusa)
+- [ ] Implementar Echo para criar uma API RESTful e retornar os resultados a partir de um GET e não pelo console
+
+## Material de Estudo
+
+- [Kanto Gym Leaders](https://pokemondb.net/red-blue/gymleaders-elitefour)
+- [Echo](https://echo.labstack.com/docs)
+- [Mockery](https://vektra.github.io/mockery/latest/)
