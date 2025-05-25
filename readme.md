@@ -3,7 +3,7 @@
 ## Descrição
 
 Este projeto é um exemplo prático criado para estudar conceitos fundamentais de design de software usando a linguagem Go.
-O domínio do projeto é inspirado no universo Pokémon, modelando a estrutura de um ginásio (Gym), um treinador (Trainer) e pokémons (Pokemon).
+O domínio do projeto é inspirado no universo `Pokémon`, modelando a estrutura de um ginásio (`Gym`), um treinador (`Trainer`) e pokémons (`Pokemon`).
 
 ## O que estamos aprendendo?
 
