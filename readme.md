@@ -5,6 +5,13 @@
 Este projeto é um exemplo prático criado para estudar conceitos fundamentais de design de software usando a linguagem Go.
 O domínio do projeto é inspirado no universo `Pokémon`, modelando a estrutura de um ginásio (`Gym`), um treinador (`Trainer`) e pokémons (`Pokemon`).
 
+```bash
+go run ./..
+Pewter Gym Trainer:  Brock
+Geodude
+Onix
+```
+
 ## O que estamos aprendendo?
 
 ### Injeção de Dependência (Dependency Injection)
