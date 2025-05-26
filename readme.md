@@ -47,7 +47,7 @@ Onix
 - [ ] Implementar `Model` pokémon (contendo nome e level) para ser retornado como valor no `ListPokemons`.
 - [ ] Adicionar o ginário de `Cerulean` e a treinadora `Misty`.
 - [ ] Implementar `mockery` para gerar mocks de interfaces.
-- [ ] Implementar teste unitário para o `Gym` e `Trainer`.
+- [ ] Implementar teste unitário (usando Testify) para o `Gym` e `Trainer`.
 - [ ] Implementar chamada `HTTP` (utilizando `Resty`)para PokeAPI e buscar informações dos pokémons (com foco em `Habilidades` que ele sabe no nível atual)
 - [ ] Implementar o restante dos ginários de `Kanto` (Elite Four não inclusa)
 - [ ] Implementar Echo para criar uma API RESTful e retornar os resultados a partir de um GET e não pelo console
@@ -57,6 +57,7 @@ Onix
 
 - [Kanto Gym Leaders](https://pokemondb.net/red-blue/gymleaders-elitefour)
 - [Mockery](https://vektra.github.io/mockery/latest/)
+- [Testify](https://github.com/stretchr/testify)
 - [Resty](https://github.com/go-resty/resty)
 - [PokeAPI](https://pokeapi.co/)
 - [Echo](https://echo.labstack.com/docs)
