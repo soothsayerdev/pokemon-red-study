@@ -1,17 +1,21 @@
 package gym
 
 type Pewter struct {
-	Name    string
-	Type    string
 	trainer trainer
+	name    string
+	Type    string
 }
 
 func NewPewterGym(name string, trainer trainer) *Pewter {
 	return &Pewter{
-		Name:    name,
+		name:    name,
 		Type:    "Pewter",
 		trainer: trainer,
 	}
+}
+
+func (p *Pewter) Name() string {
+	return p.name
 }
 
 func (p *Pewter) TrainerName() string {
