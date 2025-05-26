@@ -47,7 +47,7 @@ Onix
 - Projeto já possui `launch.json` configurado para debug a partir do VSCode.
 
 ### CI
-- Projeto possui integração com GH Actions para rodar testes automaticamente e build em cada `push` ou `pull request`.
+- Projeto possui integração com `GH Actions` para rodar testes automaticamente e build em cada `push` ou `pull request`, simulando uma Pipeline de CI/CD.
 
 ## Próximos Passos (fazer em ordem)
 
