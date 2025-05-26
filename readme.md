@@ -46,7 +46,7 @@ Onix
 ### Debug
 - Projeto já possui `launch.json` configurado para debug a partir do VSCode.
 
-## Próximos Passos
+## Próximos Passos (fazer em ordem)
 
 - [ ] Implementar `Model` pokémon (contendo nome e level) para ser retornado como valor no `ListPokemons`.
 - [ ] Adicionar o ginário de `Cerulean` e a treinadora `Misty`.
