@@ -64,6 +64,7 @@ Onix
 - [PokeAPI](https://pokeapi.co/)
 - [Echo](https://echo.labstack.com/docs)
 - [Swaggo](https://github.com/swaggo/echo-swagger)
+- [JSON To Go](https://mholt.github.io/json-to-go/)
 
 
 ## Desafio
