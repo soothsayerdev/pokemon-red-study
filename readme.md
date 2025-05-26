@@ -34,6 +34,8 @@ Onix
 - Encapsulamento de dados e comportamento.
 - Separação de responsabilidades em pacotes: `gym`, `trainer` e `pokemon`.
 - Como construir sistemas modulares e testáveis.
+- Organização de código em pacotes para melhor legibilidade e manutenção.
+- Documentação através de Swagger.
 
 
 ### Debug
