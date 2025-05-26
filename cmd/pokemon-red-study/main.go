@@ -23,5 +23,6 @@ func main() {
 	fmt.Printf("The trainer is: %s\n", pewterGym.TrainerName())
 	fmt.Println("Pokemons in this gym:")
 
+	//TODO: Alterar esse retorno para ser um array de pokemon e iterar sobre eles, listando seus nomes
 	pewterGym.ListGymsPokemons()
 }
