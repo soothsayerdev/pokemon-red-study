@@ -6,8 +6,10 @@ Este projeto é um exemplo prático criado para estudar conceitos fundamentais d
 O domínio do projeto é inspirado no universo `Pokémon`, modelando a estrutura de um ginásio (`Gym`), um treinador (`Trainer`) e pokémons (`Pokemon`).
 
 ```bash
-go run ./..
-Pewter Gym Trainer:  Brock
+go run -race ./cmd/pokemon-red-study
+Welcome to the Pewter Gym!
+The trainer is: Brock
+Pokemons in this gym:
 Geodude
 Onix
 ```
@@ -40,6 +42,10 @@ Onix
 
 - Como construir sistemas modulares e testáveis.
 
+
+### Debug
+- Projeto já possui `launch.json` configurado para debug a partir do VSCode.
+
 ## Próximos Passos
 
 - [ ] Adicionar o ginário de `Cerulean` e a treinadora `Misty`.
@@ -53,3 +59,8 @@ Onix
 - [Kanto Gym Leaders](https://pokemondb.net/red-blue/gymleaders-elitefour)
 - [Echo](https://echo.labstack.com/docs)
 - [Mockery](https://vektra.github.io/mockery/latest/)
+
+
+## Desafio
+
+- [ ] Implementar Elite Four
