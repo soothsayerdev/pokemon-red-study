@@ -24,3 +24,8 @@ format: ## Format code and organize imports
 .PHONY: lint
 lint: ## Runs golangci-lint
 	golangci-lint run
+
+.PHONY: mocks
+mocks: ## Generate mocks
+	find internal -type d -name "mocks" -exec rm -rf {} +
+	mockery

@@ -47,7 +47,7 @@ Onix
 ## Próximos Passos (fazer em ordem)
 
 - [ ] Implementar `Model` pokémon (contendo nome e level) para ser retornado como valor no `ListPokemons`.
-- [ ] Adicionar o ginário de `Cerulean` e a treinadora `Misty`.
+- [ ] Adicionar o ginásio de `Cerulean` e a treinadora `Misty`.
 - [ ] Implementar `mockery` para gerar mocks de interfaces.
 - [ ] Implementar teste unitário (usando Testify) para o `Gym` e `Trainer`.
 - [ ] Implementar chamada `HTTP` (utilizando `Resty`) para PokeAPI e buscar informações dos pokémons (com foco em `Habilidades` que ele sabe no nível atual)
