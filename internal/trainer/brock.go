@@ -1,6 +1,8 @@
 package trainer
 
-import "fmt"
+import (
+	"pokemon-red-study/internal/model"
+)
 
 // Brock representa uma implementação concreta da interface trainer.
 // Ele contém um nome e uma lista de pokémons capturados.
@@ -34,8 +36,15 @@ func (b *Brock) CapturePokemon(pokemon pokemon) {
 // ListPokemons percorre e imprime no console o nome de todos os pokémons capturados.
 // Este método também faz parte da interface trainer, permitindo que Brock seja injetado em qualquer componente que dependa da abstração, como o Gym.
 // Isso facilita o desacoplamento e promove a injeção de dependência.
-func (b *Brock) ListPokemons() {
+func (b *Brock) ListPokemons() []model.Pokemon {
+	var pokemons []model.Pokemon
 	for _, pokemon := range b.pokemons {
-		fmt.Println(pokemon.Name())
+		pokemons = append(pokemons, model.Pokemon{
+			Name:  pokemon.Name(),
+			Level: pokemon.Level(),
+		})
+		// fmt.Println(pokemon.Name())
+
 	}
+	return pokemons
 }

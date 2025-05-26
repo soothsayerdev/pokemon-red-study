@@ -1,12 +1,14 @@
 package gym
 
+import "pokemon-red-study/internal/model"
+
 // Pewter representa o Ginásio de Pewter, contendo informações sobre seu nome, tipo
 // e o treinador responsável. O campo 'trainer' é uma abstração, permitindo que qualquer
 // implementação da interface trainer seja utilizada, promovendo a injeção de dependência.
 type Pewter struct {
 	trainer trainer // dependência injetada via interface, desacoplada de implementações concretas
 	name    string
-	Type    string
+	Type    string // intuitar expecificar 
 }
 
 // NewPewterGym é um construtor que cria e retorna uma nova instância de Pewter Gym.
@@ -38,6 +40,6 @@ func (p *Pewter) TrainerName() string {
 
 // ListGymsPokemons lista todos os pokémons do treinador do ginásio.
 // Assim como TrainerName, este método opera exclusivamente sobre a abstração trainer, demonstrando a aplicação prática da injeção de dependência via interface.
-func (p *Pewter) ListGymsPokemons() {
-	p.trainer.ListPokemons()
+func (p *Pewter) ListGymsPokemons() []model.Pokemon {
+	return p.trainer.ListPokemons()
 }
