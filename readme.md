@@ -46,6 +46,9 @@ Onix
 ### Debug
 - Projeto já possui `launch.json` configurado para debug a partir do VSCode.
 
+### CI
+- Projeto possui integração com GH Actions para rodar testes automaticamente e build em cada `push` ou `pull request`.
+
 ## Próximos Passos (fazer em ordem)
 
 - [ ] Implementar `Model` pokémon (contendo nome e level) para ser retornado como valor no `ListPokemons`.
