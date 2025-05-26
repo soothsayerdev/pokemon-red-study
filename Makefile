@@ -14,11 +14,10 @@ update: ## Update go modules
 
 .PHONY: run
 run: ## Execute the application locally
-	go run -race ./
+	go run -race ./cmd/pokemon-red-study
 
 .PHONY: format
 format: ## Format code and organize imports
-	goimports --local -w .
 	go fmt ./...
 	fieldalignment -fix ./...
 

@@ -19,7 +19,9 @@ func main() {
 
 	pewterGym := gym.NewPewterGym("Pewter", brock)
 
-	fmt.Println("Pewter Gym Trainer: ", pewterGym.TrainerName())
+	fmt.Printf("Welcome to the %s Gym!\n", pewterGym.Name())
+	fmt.Printf("The trainer is: %s\n", pewterGym.TrainerName())
+	fmt.Println("Pokemons in this gym:")
 
 	pewterGym.ListGymsPokemons()
 }
