@@ -41,7 +41,7 @@ func (b *Brock) ListPokemons() []model.Pokemon {
 	for _, pokemon := range b.pokemons {
 		pokemons = append(pokemons, model.Pokemon{
 			Name:  pokemon.Name(),
-			Level: model.Pokemon.Level,
+			Level: pokemon.Level(),
 		})
 		// fmt.Println(pokemon.Name())
 

@@ -12,9 +12,13 @@ func NewOnix(level int) *Onix {
 	}
 }
 
-func (g *Onix) Name() string {
-	return g.name
+func (o *Onix) Name() string {
+	return o.name
 }
 
-func (g *Onix) Attack() {
+func (o *Onix) Attack() {
+}
+
+func (o *Onix) Level() int {
+	return o.level
 }

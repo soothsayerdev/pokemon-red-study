@@ -17,16 +17,41 @@ func main() {
 	brock.CapturePokemon(geodude)
 	brock.CapturePokemon(onix)
 
+	// pewter
 	pewterGym := gym.NewPewterGym("Pewter", brock)
 
 	fmt.Printf("Welcome to the %s Gym!\n", pewterGym.Name())
 	fmt.Printf("The trainer is: %s\n", pewterGym.TrainerName())
 	fmt.Println("Pokemons in this gym:")
 
+	pokemons_brock := brock.ListPokemons()
+	for _, p := range pokemons_brock {
+		fmt.Printf("Name: %s, Level: %d\n", p.Name, p.Level)
+	}
+
+
+	staryu := pokemon.NewStaryu(18)
+	starmie := pokemon.NewStarmie(21)
+
+	misty := trainer.NewMisty("Misty")
+	misty.CapturePokemon(staryu)
+	misty.CapturePokemon(starmie)
+
+	fmt.Println()
+	fmt.Println("--------------------------------------------------------------------------------------------------")
+	fmt.Println()
+
 	// cerulean 
-	fmt.Printf("Welcome to the %s Gym!\n", pewterGym.Name())
-	fmt.Printf("The trainer is: %s\n", pewterGym.TrainerName())
+	ceruleanGym := gym.NewCeruleanGym("Cerulean", misty)
+
+	fmt.Printf("Welcome to the %s Gym!\n", ceruleanGym.Name())
+	fmt.Printf("The trainer is: %s\n", ceruleanGym.TrainerName())
 	fmt.Println("Pokemons in this gym:")
+
+	pokemons_misty := misty.ListPokemons()
+	for _, p := range pokemons_misty {
+		fmt.Printf("Name: %s, Level: %d\n", p.Name, p.Level)
+	}
 
 	//TODO: Alterar esse retorno para ser um array de pokemon e iterar sobre eles, listando seus nomes
 	pewterGym.ListGymsPokemons()

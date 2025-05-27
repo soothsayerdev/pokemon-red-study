@@ -18,3 +18,7 @@ func (g *Geodude) Name() string {
 
 func (g *Geodude) Attack() {
 }
+
+func (g *Geodude) Level() int {
+	return g.level
+}
