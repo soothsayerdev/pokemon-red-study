@@ -21,13 +21,35 @@ func (m *Misty) CapturePokemon(pokemon pokemon) {
 	m.pokemons = append(m.pokemons, pokemon)
 }
 
-func (m *Misty) ListPokemons() []model.Pokemon {
-	var pokemons []model.Pokemon
+func (m *Misty) ListPokemonsNoEff() []model.Pokemon {
+	var pokemons []model.Pokemon 							// lento, pois poderá causar inumeras verificações e realocações desnecessesarias
 	for _, pokemon := range m.pokemons {
 		pokemons = append(pokemons, model.Pokemon{
 			Name: pokemon.Name(),
 			Level: pokemon.Level(),
 		})
+	}
+	return pokemons
+}
+
+func (m *Misty) ListPokemons() []model.Pokemon {
+	pokemons := make([]model.Pokemon, 0, 2) // define capacidade inicial ( 2 pokemons na bag )
+	for _, pokemon := range m.pokemons {
+		pokemons = append(pokemons, model.Pokemon{			// rapido, pois nos ja definimos e cortamos o trabalho q a maquina teria de ler e entender, verificar e alocar
+			Name: pokemon.Name(),
+			Level: pokemon.Level(),
+		})
+	}
+	return pokemons
+}
+
+func (m *Misty) ListPokemonsMoreEff() []model.Pokemon {
+	pokemons := make([]model.Pokemon, 2)
+	for i, pokemon := range m.pokemons { 	
+		pokemons[i] = model.Pokemon{		// atribuição direta
+			Name: pokemon.Name(),
+			Level: pokemon.Level(),
+		}
 	}
 	return pokemons
 }
