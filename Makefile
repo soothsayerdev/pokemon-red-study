@@ -29,3 +29,7 @@ lint: ## Runs golangci-lint
 mocks: ## Generate mocks
 	find internal -type d -name "mocks" -exec rm -rf {} +
 	mockery
+
+go clean -modcache
+go clean -cache -testcache
+go mod tidy
