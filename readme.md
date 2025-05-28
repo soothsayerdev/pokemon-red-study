@@ -49,7 +49,7 @@ Onix
 - [x] Implementar `Model` pokémon (contendo nome e level) para ser retornado como valor no `ListPokemons`. // 26/05
 - [x] Adicionar o ginásio de `Cerulean` e a treinadora `Misty`. // 26/05
 - [x] Implementar `mockery` para gerar mocks de interfaces e ler documentaçao do mockery https://vektra.github.io/mockery/latest/configuration/#mockery-init 27/05
-- [ ] Implementar teste unitário (usando Testify) para o `Gym` e `Trainer`.
+- [x] Implementar teste unitário (usando Testify) para o `Gym` e `Trainer`.
 - [ ] Implementar chamada `HTTP` (utilizando `Resty`) para PokeAPI e buscar informações dos pokémons (com foco em `Habilidades` que ele sabe no nível atual)
 - [ ] Implementar o restante dos ginários de `Kanto` (Elite Four não inclusa)
 - [ ] Implementar Echo para criar uma API RESTful e retornar os resultados a partir de um GET e não pelo console
