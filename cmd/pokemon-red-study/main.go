@@ -29,19 +29,19 @@ func main() {
 		fmt.Printf("Name: %s, Level: %d\n", p.Name, p.Level)
 	}
 
-
 	staryu := pokemon.NewStaryu(18)
 	starmie := pokemon.NewStarmie(21)
 
 	misty := trainer.NewMisty("Misty")
 	misty.CapturePokemon(staryu)
 	misty.CapturePokemon(starmie)
+	misty.CapturePokemon(geodude)
 
 	fmt.Println()
 	fmt.Println("--------------------------------------------------------------------------------------------------")
 	fmt.Println()
 
-	// cerulean 
+	// cerulean
 	ceruleanGym := gym.NewCeruleanGym("Cerulean", misty)
 
 	fmt.Printf("Welcome to the %s Gym!\n", ceruleanGym.Name())

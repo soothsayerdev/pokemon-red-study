@@ -14,7 +14,7 @@ update: ## Update go modules
 
 .PHONY: run
 run: ## Execute the application locally
-	go run -race ./cmd/pokemon-red-study
+	go run ./cmd/pokemon-red-study
 
 .PHONY: format
 format: ## Format code and organize imports

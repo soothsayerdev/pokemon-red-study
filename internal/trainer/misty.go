@@ -33,7 +33,7 @@ func (m *Misty) ListPokemonsNoEff() []model.Pokemon {
 }
 
 func (m *Misty) ListPokemons() []model.Pokemon {
-	pokemons := make([]model.Pokemon, 0, 2) // define capacidade inicial ( 2 pokemons na bag )
+	pokemons := make([]model.Pokemon, 0, len(m.pokemons)) // define capacidade inicial ( 2 pokemons na bag )
 	for _, pokemon := range m.pokemons {
 		pokemons = append(pokemons, model.Pokemon{			// rapido, pois nos ja definimos e cortamos o trabalho q a maquina teria de ler e entender, verificar e alocar
 			Name: pokemon.Name(),
@@ -44,7 +44,7 @@ func (m *Misty) ListPokemons() []model.Pokemon {
 }
 
 func (m *Misty) ListPokemonsMoreEff() []model.Pokemon {
-	pokemons := make([]model.Pokemon, 2)
+	pokemons := make([]model.Pokemon, len(m.pokemons))
 	for i, pokemon := range m.pokemons { 	
 		pokemons[i] = model.Pokemon{		// atribuição direta
 			Name: pokemon.Name(),
