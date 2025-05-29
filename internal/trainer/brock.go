@@ -36,10 +36,10 @@ func (b *Brock) CapturePokemon(pokemon pokemon) {
 // ListPokemons percorre e imprime no console o nome de todos os pokémons capturados.
 // Este método também faz parte da interface trainer, permitindo que Brock seja injetado em qualquer componente que dependa da abstração, como o Gym.
 // Isso facilita o desacoplamento e promove a injeção de dependência.
-func (b *Brock) ListPokemons() []model.Pokemon {
-	var pokemons []model.Pokemon
+func (b *Brock) ListPokemons() []model.PokemonDTO {
+	var pokemons []model.PokemonDTO
 	for _, pokemon := range b.pokemons {
-		pokemons = append(pokemons, model.Pokemon{
+		pokemons = append(pokemons, model.PokemonDTO{
 			Name:  pokemon.Name(),
 			Level: pokemon.Level(),
 		})

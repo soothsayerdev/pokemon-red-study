@@ -38,19 +38,19 @@ func (_m *Mocktrainer) EXPECT() *Mocktrainer_Expecter {
 }
 
 // ListPokemons provides a mock function for the type Mocktrainer
-func (_mock *Mocktrainer) ListPokemons() []model.Pokemon {
+func (_mock *Mocktrainer) ListPokemons() []model.PokemonDTO {
 	ret := _mock.Called()
 
 	if len(ret) == 0 {
 		panic("no return value specified for ListPokemons")
 	}
 
-	var r0 []model.Pokemon
-	if returnFunc, ok := ret.Get(0).(func() []model.Pokemon); ok {
+	var r0 []model.PokemonDTO
+	if returnFunc, ok := ret.Get(0).(func() []model.PokemonDTO); ok {
 		r0 = returnFunc()
 	} else {
 		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]model.Pokemon)
+			r0 = ret.Get(0).([]model.PokemonDTO)
 		}
 	}
 	return r0
@@ -73,12 +73,12 @@ func (_c *Mocktrainer_ListPokemons_Call) Run(run func()) *Mocktrainer_ListPokemo
 	return _c
 }
 
-func (_c *Mocktrainer_ListPokemons_Call) Return(pokemons []model.Pokemon) *Mocktrainer_ListPokemons_Call {
+func (_c *Mocktrainer_ListPokemons_Call) Return(pokemons []model.PokemonDTO) *Mocktrainer_ListPokemons_Call {
 	_c.Call.Return(pokemons)
 	return _c
 }
 
-func (_c *Mocktrainer_ListPokemons_Call) RunAndReturn(run func() []model.Pokemon) *Mocktrainer_ListPokemons_Call {
+func (_c *Mocktrainer_ListPokemons_Call) RunAndReturn(run func() []model.PokemonDTO) *Mocktrainer_ListPokemons_Call {
 	_c.Call.Return(run)
 	return _c
 }

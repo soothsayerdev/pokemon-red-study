@@ -26,9 +26,6 @@ func (c *Cerulean) TrainerName() string {
 	return c.trainer.Name()
 }
 
-func (c *Cerulean) ListGymsPokemons() []model.Pokemon {
+func (c *Cerulean) ListGymsPokemons() []model.PokemonDTO {
 	return c.trainer.ListPokemons()
 }
-
-
-

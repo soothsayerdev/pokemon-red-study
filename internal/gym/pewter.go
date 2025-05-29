@@ -8,7 +8,7 @@ import "pokemon-red-study/internal/model"
 type Pewter struct {
 	trainer trainer // dependência injetada via interface, desacoplada de implementações concretas
 	name    string
-	Type    string // intuitar expecificar 
+	Type    string // intuitar expecificar
 }
 
 // NewPewterGym é um construtor que cria e retorna uma nova instância de Pewter Gym.
@@ -40,6 +40,6 @@ func (p *Pewter) TrainerName() string {
 
 // ListGymsPokemons lista todos os pokémons do treinador do ginásio.
 // Assim como TrainerName, este método opera exclusivamente sobre a abstração trainer, demonstrando a aplicação prática da injeção de dependência via interface.
-func (p *Pewter) ListGymsPokemons() []model.Pokemon {
+func (p *Pewter) ListGymsPokemons() []model.PokemonDTO {
 	return p.trainer.ListPokemons()
 }

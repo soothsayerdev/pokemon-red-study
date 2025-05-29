@@ -9,21 +9,21 @@ import (
 
 type MockTrainer struct {
 	name     string
-	pokemons []model.Pokemon
+	pokemons []model.PokemonDTO
 }
 
 func (m *MockTrainer) Name() string {
 	return m.name
 }
 
-func (m *MockTrainer) ListPokemons() []model.Pokemon {
+func (m *MockTrainer) ListPokemons() []model.PokemonDTO {
 	return m.pokemons
 }
 
 func TestCeruleanGym(t *testing.T) {
 	mockTrainer := &MockTrainer{
 		name: "Misty",
-		pokemons: []model.Pokemon{
+		pokemons: []model.PokemonDTO{
 			{Name: "Staryu"},
 			{Name: "Starmie"},
 		},
@@ -41,7 +41,7 @@ func TestCeruleanGym(t *testing.T) {
 func TestPewterGym(t *testing.T) {
 	mockTrainer := &MockTrainer{
 		name: "Brock",
-		pokemons: []model.Pokemon{
+		pokemons: []model.PokemonDTO{
 			{Name: "Geodude"},
 			{Name: "Onix"},
 		},

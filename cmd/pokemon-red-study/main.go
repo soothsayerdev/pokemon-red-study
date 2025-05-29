@@ -3,11 +3,22 @@ package main
 import (
 	"fmt"
 	"pokemon-red-study/internal/gym"
+	"pokemon-red-study/internal/handlers"
 	"pokemon-red-study/internal/pokemon"
 	"pokemon-red-study/internal/trainer"
+
+	"github.com/labstack/echo/v4"
+	echoSwagger "github.com/swaggo/echo-swagger"
 )
 
 func main() {
+	e := echo.New()
+
+	// Rota para acessar Swagger - Essa interface possibilita a visualização de todos os endpoints da API, a definição dos parâmetros e os exemplos de resposta.
+	e.GET("/swagger/*", echoSwagger.WrapHandler)
+
+	//Endpoint busca moves do pokemon
+	e.GET("/pokemon/moves", handlers.GetPokemonMoves)
 
 	geodude := pokemon.NewGeodude(12)
 	onix := pokemon.NewOnix(14)
@@ -18,7 +29,7 @@ func main() {
 	brock.CapturePokemon(onix)
 
 	// pewter
-	pewterGym := gym.NewPewterGym("Pewter", brock)
+	pewterGym := gym.NewPewterGym("Pewter", brock) // colocar na api
 
 	fmt.Printf("Welcome to the %s Gym!\n", pewterGym.Name())
 	fmt.Printf("The trainer is: %s\n", pewterGym.TrainerName())
@@ -55,4 +66,6 @@ func main() {
 
 	//TODO: Alterar esse retorno para ser um array de pokemon e iterar sobre eles, listando seus nomes
 	pewterGym.ListGymsPokemons()
+
+	e.Logger.Fatal(e.Start(":8080"))
 }
