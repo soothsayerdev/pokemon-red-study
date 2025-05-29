@@ -11,8 +11,6 @@ type GymResponse struct {
 	Pokemons []GymPokemons `json:"gymPokemons"`
 }
 
-
-
 type GymPokemons struct {
 	Name string `json:"name"`
 	Level int `json:"level"`

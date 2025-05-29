@@ -33,4 +33,16 @@ func GetPokemonMoves(c echo.Context) error {
 	})
 }
 
-func GetGyms(c echo.Context)
+func GetGyms(c echo.Context) error {
+	payload := model.GymRequest{}
+	err := (&echo.DefaultBinder{}).BindQueryParams(c, &payload)
+
+	if err != nil {
+		return c.JSON(http.StatusBadRequest, nil)
+	}
+
+	return c.JSON(http.StatusOK, model.GymResponse{
+		TrainerName: payload.Name,
+		
+	})
+}
