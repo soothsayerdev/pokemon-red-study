@@ -1,5 +1,6 @@
 package model
 
+// Modelos: Definem como os dados são recebidos e enviados pela API.
 type Move struct {
 	Move struct {
 		Name string `json:"name"`
