@@ -19,7 +19,8 @@ func main() {
 
 	//Endpoint busca moves do pokemon
 	e.GET("/pokemon/moves", handlers.GetPokemonMoves)
-
+	e.GET("/gym", handlers.GetGymInfo)
+	
 	geodude := pokemon.NewGeodude(12)
 	onix := pokemon.NewOnix(14)
 

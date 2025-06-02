@@ -6,6 +6,7 @@ type GymRequest struct {
 }
 
 type GymResponse struct {
+	GymName	string 	`json:"gym_name"`
 	TrainerName string `json:"trainerName"`
 	GymType string `json:"gymType"`
 	Pokemons []GymPokemons `json:"gymPokemons"`
